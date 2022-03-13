@@ -9,13 +9,14 @@
       "clients": [
         {
           "id": "ID",
-          "alterId": 64,
-          "security": "aes-128-gcm"
+          "alterId": 0
         }
       ]
     },
     "streamSettings": {
       "network": "ws"
+      "maxEarlyData": 2048,
+      "earlyDataHeaderName":"Sec-Websocket-Protocol"
     }
   },
   "inboundDetour": [],
